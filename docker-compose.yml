@@ -31,5 +31,10 @@ services:
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=changeme
 
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080:8080"
+
 volumes:
   dev-db-data:
